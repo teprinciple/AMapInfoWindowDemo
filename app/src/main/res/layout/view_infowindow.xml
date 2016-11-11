@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="127dp"
+    android:background="#0000"
+    >
+    <LinearLayout
+        android:layout_width="209dp"
+        android:layout_height="127dp"
+        android:orientation="vertical"
+        android:background="@drawable/inforwindow_bg">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="11dp"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:textSize="14sp"
+            android:textColor="@color/black_text"/>
+
+        <TextView
+            android:id="@+id/addr"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:textSize="12sp"
+            android:lines="2"
+            android:ellipsize="end"
+            android:textColor="@color/black_text2"/>
+
+        <View
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="9dp"
+            android:background="#DFDFDF"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_marginTop="9dp"
+                android:id="@+id/navigation_LL"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:layout_marginLeft="27dp"
+                    android:layout_width="17dp"
+                    android:layout_height="18dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/inforwindow_navigation"/>
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/infowindow_navigation"
+                    android:textSize="14sp"
+                    android:textColor="@color/black_text"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="13dp"
+                android:background="#DFDFDF"/>
+
+            <LinearLayout
+                android:layout_marginTop="9dp"
+                android:id="@+id/call_LL"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:layout_marginLeft="23dp"
+                    android:layout_width="19dp"
+                    android:layout_height="18dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/inforwindow_call"/>
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/infowindow_call"
+                    android:textSize="14sp"
+                    android:textColor="@color/black_text"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+     <!--用来偏移inforwindow的位置-->
+    <TextView
+        android:layout_width="38dp"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
