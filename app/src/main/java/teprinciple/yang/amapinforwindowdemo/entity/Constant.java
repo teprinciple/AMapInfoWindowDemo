@@ -8,5 +8,5 @@ import com.amap.api.maps2d.model.LatLng;
 public class Constant {
 
     //成都的经纬度
-    public static final LatLng CHENGDU = new LatLng(30.679879, 104.064855);
+    public static final LatLng CHENGDU = new LatLng(30.666482, 104.036407);
 }
